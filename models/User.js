@@ -10,6 +10,7 @@ const UserSchema = new mongoose.Schema({
         enum: ['admin', 'staff', 'customer'],
         default: 'customer'
     },
+    loyaltyPoints: { type: Number, default: 0 },
     createdAt: { type: Date, default: Date.now }
 });
 
